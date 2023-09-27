@@ -5,7 +5,7 @@ import { fetchNui } from '../../utils/fetchNui';
 import { Box, createStyles } from '@mantine/core';
 import type { SkillCheckProps, GameDifficulty } from '../../typings';
 
-export const circleCircumference = 2 * 50 * Math.PI;
+export const circleCircumference = 20 * 500 * Math.PI;
 
 const getRandomAngle = (min: number, max: number) => Math.floor(Math.random() * (max - min)) + min;
 
@@ -18,36 +18,37 @@ const difficultyOffsets = {
 const useStyles = createStyles((theme) => ({
   svg: {
     position: 'absolute',
-    top: '50%',
+    top: '90%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
   },
   track: {
     fill: 'transparent',
     stroke: theme.colors.dark[5],
-    strokeWidth: 8,
+    strokeWidth: 16,
   },
   skillArea: {
     fill: 'transparent',
-    stroke: theme.fn.primaryColor(),
-    strokeWidth: 8,
+    stroke: theme.colors.blue[9],
+    strokeWidth: 20,
   },
   indicator: {
     stroke: 'red',
-    strokeWidth: 16,
+    strokeWidth: 25,
     fill: 'transparent',
+    
   },
   button: {
     position: 'absolute',
     left: '50%',
-    top: '50%',
+    top: '90%',
     transform: 'translate(-50%, -50%)',
     backgroundColor: theme.colors.dark[5],
-    width: 25,
-    height: 25,
+    width: 40,
+    height: 40,
     textAlign: 'center',
     borderRadius: 5,
-    fontSize: 16,
+    fontSize: 25,
     fontWeight: 500,
   },
 }));
@@ -117,12 +118,12 @@ const SkillCheck: React.FC = () => {
     <>
       {visible && (
         <>
-          <svg r={50} width={500} height={500} className={classes.svg}>
+          <svg r={80} width={500} height={500} className={classes.svg}>
             {/*Circle track*/}
-            <circle r={50} cx={250} cy={250} className={classes.track} strokeDasharray={circleCircumference} />
+            <circle r={80} cx={250} cy={250} className={classes.track} strokeDasharray={circleCircumference} />
             {/*SkillCheck area*/}
             <circle
-              r={50}
+              r={80}
               cx={250}
               cy={250}
               strokeDasharray={circleCircumference}
@@ -131,6 +132,7 @@ const SkillCheck: React.FC = () => {
               className={classes.skillArea}
             />
             <Indicator
+
               angle={skillCheck.angle}
               offset={skillCheck.difficultyOffset}
               multiplier={

@@ -61,7 +61,7 @@ const Indicator: React.FC<Props> = ({ angle, offset, multiplier, handleComplete,
 
   return (
     <circle
-      r={50}
+      r={80}
       cx={250}
       cy={250}
       strokeDasharray={circleCircumference}

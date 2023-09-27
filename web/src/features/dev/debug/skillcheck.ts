@@ -6,7 +6,7 @@ export const debugSkillCheck = () => {
     {
       action: 'startSkillCheck',
       data: {
-        difficulty: ['easy', 'easy', 'hard'],
+        difficulty: ['easy', 'easy', 'hard', 'easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard', 'easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard', 'easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard', 'easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard','easy', 'easy', 'hard'],
         inputs: ['W', 'A', 'S', 'D'],
       },
     },
