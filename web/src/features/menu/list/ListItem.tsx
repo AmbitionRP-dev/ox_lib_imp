@@ -5,7 +5,7 @@ import type { MenuItem } from '../../../typings';
 import { isIconUrl } from '../../../utils/isIconUrl';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import LibIcon from '../../../components/LibIcon';
-
+import Gilroy from '../../../fonts/Gilroy-Regular.ttf';
 interface Props {
   item: MenuItem;
   index: number;
@@ -18,6 +18,7 @@ const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
     backgroundColor: theme.colors.dark[6],
     borderRadius: theme.radius.md,
     padding: 2,
+    fontFamily: Gilroy + ', sans-serif',
     height: 60,
     scrollMargin: 8,
     '&:focus': {
@@ -46,6 +47,7 @@ const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
   label: {
     color: theme.colors.dark[2],
     textTransform: 'uppercase',
+    fontFamily: Gilroy + ', sans-serif',
     fontSize: 12,
     verticalAlign: 'middle',
   },

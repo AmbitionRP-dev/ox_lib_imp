@@ -1,7 +1,7 @@
 import { Button, createStyles } from '@mantine/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import LibIcon from '../../../../components/LibIcon';
-
+import Gilroy from '../../../../fonts/Gilroy-Regular.ttf';
 interface Props {
   icon: IconProp;
   canClose?: boolean;
@@ -15,6 +15,7 @@ const useStyles = createStyles((theme, params: { canClose?: boolean }) => ({
     flex: '1 15%',
     alignSelf: 'stretch',
     height: 'auto',
+    fontFamily: Gilroy + ', sans-serif',
     textAlign: 'center',
     justifyContent: 'center',
     padding: 2,

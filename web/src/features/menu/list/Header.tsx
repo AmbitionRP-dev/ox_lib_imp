@@ -1,5 +1,6 @@
 import { Box, createStyles, Text } from '@mantine/core';
 import React from 'react';
+import Gilroy from '../../../fonts/Gilroy-Regular.ttf';
 
 const useStyles = createStyles((theme) => ({
   container: {
@@ -7,6 +8,7 @@ const useStyles = createStyles((theme) => ({
     borderTopLeftRadius: theme.radius.md,
     borderTopRightRadius: theme.radius.md,
     backgroundColor: theme.colors.dark[6],
+    fontFamily: Gilroy + ', sans-serif',
     height: 60,
     width: 384,
     display: 'flex',

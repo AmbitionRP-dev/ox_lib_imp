@@ -6,7 +6,7 @@ import { isIconUrl } from '../../../../utils/isIconUrl';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import MarkdownComponents from '../../../../config/MarkdownComponents';
 import LibIcon from '../../../../components/LibIcon';
-
+import Gilroy from '../../../../fonts/Gilroy-Regular.ttf';
 const openMenu = (id: string | undefined) => {
   fetchNui<ContextMenuProps>('openContext', { id: id, back: false });
 };
@@ -18,6 +18,7 @@ const clickContext = (id: string) => {
 const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: boolean }) => ({
   inner: {
     justifyContent: 'flex-start',
+    fontFamily: Gilroy + ', sans-serif',
   },
   label: {
     width: '100%',
@@ -28,6 +29,7 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     height: 'fit-content',
     width: '100%',
     padding: 10,
+    fontFamily: Gilroy + ', sans-serif',
     '&:hover': {
       backgroundColor: params.readOnly ? theme.colors.dark[6] : undefined,
       cursor: params.readOnly ? 'unset' : 'pointer',
@@ -41,6 +43,7 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
   },
   description: {
     color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[2],
+    fontFamily: Gilroy + ', sans-serif',
     fontSize: 12,
   },
   dropdown: {

@@ -6,6 +6,7 @@ import ScaleFade from '../../../transitions/ScaleFade';
 import type { RadialMenuItem } from '../../../typings';
 import { useLocales } from '../../../providers/LocaleProvider';
 import LibIcon from '../../../components/LibIcon';
+import Gilroy from '../../../fonts/Gilroy-Regular.ttf';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -17,7 +18,7 @@ const useStyles = createStyles((theme) => ({
   sector: {
     fill: theme.colors.dark[6],
     color: theme.colors.dark[0],
-
+    fontFamily: Gilroy + ', sans-serif',
     '&:hover': {
       fill: theme.fn.primaryColor(),
       '> g > text, > g > svg > path': {
@@ -26,6 +27,7 @@ const useStyles = createStyles((theme) => ({
     },
     '> g > text': {
       fill: theme.colors.dark[0],
+      fontFamily: Gilroy + ', sans-serif',
     },
   },
   backgroundCircle: {

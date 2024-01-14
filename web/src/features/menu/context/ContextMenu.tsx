@@ -8,7 +8,7 @@ import ReactMarkdown from 'react-markdown';
 import HeaderButton from './components/HeaderButton';
 import ScaleFade from '../../../transitions/ScaleFade';
 import MarkdownComponents from '../../../config/MarkdownComponents';
-
+import Gilroy from '../../../fonts/Gilroy-Regular.ttf';
 const openMenu = (id: string | undefined) => {
   fetchNui<ContextMenuProps>('openContext', { id: id, back: true });
 };
@@ -18,23 +18,27 @@ const useStyles = createStyles((theme) => ({
     position: 'absolute',
     top: '15%',
     right: '25%',
+    fontFamily: Gilroy + ', sans-serif',
     width: 320,
     height: 580,
   },
   header: {
     justifyContent: 'center',
     alignItems: 'center',
+    fontFamily: Gilroy + ', sans-serif',
     marginBottom: 10,
     gap: 6,
   },
   titleContainer: {
     borderRadius: 4,
     flex: '1 85%',
+    fontFamily: Gilroy + ', sans-serif',
     backgroundColor: theme.colors.dark[6],
   },
   titleText: {
     color: theme.colors.dark[0],
     padding: 6,
+    fontFamily: Gilroy + ', sans-serif',
     textAlign: 'center',
   },
   buttonsContainer: {
