@@ -16,8 +16,6 @@ import DateField from './components/fields/date';
 import TextareaField from './components/fields/textarea';
 import TimeField from './components/fields/time';
 import dayjs from 'dayjs';
-import { Group as MantineGroup } from '@mantine/core';
-import Gilroy from '../../fonts/Gilroy-Regular.ttf';
 
 export type FormValues = {
   test: {
@@ -106,7 +104,7 @@ const InputDialog: React.FC = () => {
         closeOnEscape={fields.options?.allowCancel !== false}
         closeOnClickOutside={false}
         size="xs"
-        styles={{ title: { textAlign: 'center', width: '100%', fontSize: 18, fontFamily: Gilroy + ', sans-serif'} }}
+        styles={{ title: { textAlign: 'center', width: '100%', fontSize: 18 } }}
         title={fields.heading}
         withCloseButton={false}
         overlayOpacity={0.5}

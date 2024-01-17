@@ -10,7 +10,7 @@ export const debugCustomNotification = () => {
         description: 'Notification description',
         type: 'success',
         id: 'pogchamp',
-        duration: 2000000000,
+        duration: 20000,
         style: {
           '.description': {
             color: 'red',
@@ -23,16 +23,9 @@ export const debugCustomNotification = () => {
     {
       action: 'notify',
       data: {
-        title: 'Success',
+        title: 'Error',
         description: 'Notification description',
         type: 'error',
-        id: 'pogchamp',
-        duration: 2000000000,
-        style: {
-          '.description': {
-            color: 'red',
-          },
-        },
       },
     },
   ]);
@@ -40,16 +33,10 @@ export const debugCustomNotification = () => {
     {
       action: 'notify',
       data: {
-        title: 'Success',
+        title: 'Custom icon success',
         description: 'Notification description',
         type: 'success',
-        id: 'pogchamp',
-        duration: 2000000000,
-        style: {
-          '.description': {
-            color: 'red',
-          },
-        },
+        icon: 'microchip',
       },
     },
   ]);

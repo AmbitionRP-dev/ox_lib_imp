@@ -8,12 +8,9 @@ import remarkGfm from 'remark-gfm';
 import type { AlertProps } from '../../typings';
 import MarkdownComponents from '../../config/MarkdownComponents';
 
-import Gilroy from '../../fonts/Gilroy-Regular.ttf';
-
 const useStyles = createStyles((theme) => ({
   contentStack: {
     color: theme.colors.dark[2],
-    fontFamily: Gilroy + ', sans-serif',
   },
 }));
 

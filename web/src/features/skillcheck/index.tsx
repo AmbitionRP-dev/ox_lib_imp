@@ -4,7 +4,6 @@ import Indicator from './indicator';
 import { fetchNui } from '../../utils/fetchNui';
 import { Box, createStyles } from '@mantine/core';
 import type { GameDifficulty, SkillCheckProps } from '../../typings';
-import Gilroy from '../../fonts/Gilroy-Regular.ttf';
 
 export const circleCircumference = 20 * 500 * Math.PI;
 
@@ -80,7 +79,6 @@ const useStyles = createStyles((theme, params: { difficultyOffset: number }) => 
     backgroundColor: theme.colors.dark[5],
     width: 40,
     height: 40,
-    fontFamily: Gilroy + ', sans-serif',
     textAlign: 'center',
     borderRadius: 5,
     fontSize: 25,

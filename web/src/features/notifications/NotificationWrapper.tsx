@@ -6,18 +6,17 @@ import React from 'react';
 import type { NotificationProps } from '../../typings';
 import MarkdownComponents from '../../config/MarkdownComponents';
 import LibIcon from '../../components/LibIcon';
-import Gilroy from '../../fonts/Gilroy-Regular.ttf';
 
 const useStyles = createStyles((theme) => ({
   container: {
     width: 300,
     height: 'fit-content',
-    backgroundColor: 'rgba(84, 84, 84, 0.59)',
+    backgroundColor: theme.colors.dark[6],
     color: theme.colors.dark[0],
     padding: 12,
     borderRadius: theme.radius.sm,
-    fontFamily: Gilroy + ', sans-serif'
-    // boxShadow: theme.shadows.sm,
+    fontFamily: 'Roboto',
+    boxShadow: theme.shadows.sm,
   },
   title: {
     fontWeight: 500,
@@ -26,13 +25,13 @@ const useStyles = createStyles((theme) => ({
   description: {
     fontSize: 12,
     color: theme.colors.dark[2],
-    fontFamily: Gilroy + ', sans-serif',
+    fontFamily: 'Roboto',
     lineHeight: 'normal',
   },
   descriptionOnly: {
     fontSize: 14,
     color: theme.colors.dark[2],
-    fontFamily: Gilroy + ', sans-serif',
+    fontFamily: 'Roboto',
     lineHeight: 'normal',
   },
 }));

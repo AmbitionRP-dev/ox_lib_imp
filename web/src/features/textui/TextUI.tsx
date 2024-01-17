@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 import type { TextUiPosition, TextUiProps } from '../../typings';
 import MarkdownComponents from '../../config/MarkdownComponents';
 import LibIcon from '../../components/LibIcon';
-import Gilroy from '../../fonts/Gilroy-Regular.ttf';
+
 const useStyles = createStyles((theme, params: { position?: TextUiPosition }) => ({
   wrapper: {
     height: '100%',
@@ -24,7 +24,7 @@ const useStyles = createStyles((theme, params: { position?: TextUiPosition }) =>
     margin: 8,
     backgroundColor: theme.colors.dark[6],
     color: theme.colors.dark[0],
-    fontFamily: Gilroy + ', sans-serif',
+    fontFamily: 'Roboto',
     borderRadius: theme.radius.sm,
     boxShadow: theme.shadows.sm,
   },

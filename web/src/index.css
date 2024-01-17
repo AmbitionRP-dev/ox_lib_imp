@@ -1,43 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 @import url("https://use.typekit.net/wxh5ury.css");
 @import url("https://use.typekit.net/qgr5ebd.css");
-@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:wght@400;700&display=swap');
-
-@font-face {
-  font-family: 'Gilroy-Black';
-  src: local('Gilroy-Black'), url(./fonts/Gilroy-Black.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Bold';
-  src: local('Gilroy-Bold'), url(./fonts/Gilroy-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-ExtraBold';
-  src: local('Gilroy-ExtraBold'), url(./fonts/Gilroy-ExtraBold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Light';
-  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Medium';
-  src: local('Gilroy-Medium'), url(./fonts/Gilroy-Medium.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Regular';
-  src: local('Gilroy-Regular'), url(./fonts/Gilroy-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Thin';
-  src: local('Gilroy-Thin'), url(./fonts/Gilroy-Thin.ttf) format('truetype');
-}
-
 
 html {
   color-scheme: normal !important;
@@ -46,7 +13,8 @@ html {
 body {
   background: none !important;
   margin: 0;
-  font-family: 'Gilroy-Regular', sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;

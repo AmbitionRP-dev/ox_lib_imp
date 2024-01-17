@@ -37,9 +37,6 @@ dependencies:
   '@mantine/hooks':
     specifier: ^5.10.0
     version: 5.10.3(react@18.2.0)
-  '@types/google.fonts':
-    specifier: ^1.0.5
-    version: 1.0.5
   '@vitejs/plugin-react':
     specifier: ^4.2.0
     version: 4.2.0(vite@5.0.5)
@@ -1351,10 +1348,6 @@ packages:
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
     dependencies:
       '@types/ms': 0.7.31
-    dev: false
-
-  /@types/google.fonts@1.0.5:
-    resolution: {integrity: sha512-A1SoNkHhhtIU9nJ+FOVikTYwE1dxg66r7xxHJA0lgS8Hj6UwS18cPX9E907b/YEk40HvDy36fZGFub0BOkQ/Mw==}
     dev: false
 
   /@types/hast@2.3.4:
